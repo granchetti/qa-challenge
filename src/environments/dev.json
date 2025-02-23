@@ -1,0 +1,13 @@
+{
+  "baseUrl": "https://en.wikipedia.org",
+  "users": {
+    "default": {
+      "username": "Cv-test-challenge",
+      "password": "Demo12345678"
+    },
+    "pepe": {
+      "username": "Cv-test-challenge",
+      "password": "Demo12345678"
+    }
+  }
+}

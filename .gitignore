@@ -1,0 +1,52 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Playwright cache and authentication
+playwright/.auth/
+playwright/.cache/
+
+# Test output and reports
+reports/
+screenshots/
+test-results/
+trace.zip
+
+# Authentication and session storage
+auth/
+storageState.json
+
+# VS Code configuration
+.vscode/
+*.code-workspace
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# Code coverage reports
+coverage/
+*.lcov
+
+# Build output
+dist/
+build/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Global dependencies
+.npm/
+.pnp/
+.pnp.js

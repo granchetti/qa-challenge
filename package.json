@@ -1,0 +1,22 @@
+{
+  "name": "caravelo-qa-challenge",
+  "version": "1.0.0",
+  "scripts": {
+    "test:login": "cucumber-js --tags @login  --publish",
+    "test:content": "cucumber-js --tags @login && cucumber-js --tags @content --publish",
+    "test:history": "cucumber-js --tags @login && cucumber-js --tags @history --publish",
+    "test": "npm run test:login && cucumber-js --tags 'not @login' --publish"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.2.0",
+    "@playwright/test": "^1.50.1",
+    "@types/node": "^22.13.5",
+    "multiple-cucumber-html-reporter": "^3.9.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "zod": "^3.24.2"
+  }
+}
