@@ -1,8 +1,6 @@
 name: E2E Tests
 
 on:
-  schedule:
-    - cron: "0 * * * *"  # Ejecuta el workflow cada hora
   workflow_dispatch:
 
 jobs:
