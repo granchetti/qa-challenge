@@ -10,7 +10,8 @@ export let context: BrowserContext;
 export let page: Page;
 
 Before(async function() {
-  browser = await chromium.launch({ headless: false });
+  const isCI = process.env.CI === 'true';
+  browser = await chromium.launch({ headless: isCI });
   
   const userKey = this.parameters.userKey || "default";
   
