@@ -18,32 +18,6 @@ End-to-end test automation project for Wikipedia's critical workflows using:
 - npm ≥ 9.x
 - Browsers: Chromium, Firefox, WebKit
 
-## ⚙️ Installation
-```bash
-# Clone repository
-git clone https://github.com/granchetti/qa-challenge.git
-cd qa-challenge
-
-# Install dependencies
-npm install
-```
-
-## ▶️ Test Execution
-
-```bash
-# Run all tests
-npm test
-
-# Run only login tests
-npm run test:login
-
-# Run content menu tests
-npm run test:content
-
-# Run view history tests
-npm run test:history
-```
-
 ## 🧩 Project Structure
 
 ```bash
@@ -60,3 +34,35 @@ npm run test:history
 ├── reports/                  # Test reports
 └── cucumber.js               # Cucumber configuration
 ```
+
+## ⚙️ Installation
+```bash
+# Clone repository
+git clone https://github.com/granchetti/qa-challenge.git
+cd qa-challenge
+
+# Install dependencies
+npm install
+```
+
+## ▶️ Local Test Execution
+
+```bash
+# Run all tests
+npm test
+
+# Run only login tests
+npm run test:login
+
+# Run content menu tests
+npm run test:content
+
+# Run view history tests
+npm run test:history
+```
+## 🚦 CI/CD (GitHub Actions)
+
+[![GitHub Actions](https://github.com/granchetti/qa-challenge/actions/workflows/e2e_tests.yml/badge.svg)](https://github.com/granchetti/qa-challenge/actions/workflows/e2e_tests.yml)
+
+The project includes GitHub Actions configuration for on-demand test execution. The workflow must be manually triggered through the GitHub Actions interface.
+
