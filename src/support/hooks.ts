@@ -24,7 +24,6 @@ After(async function (scenario) {
   if (scenario.result?.status === Status.FAILED) {
     const screenshotPath = `reports/screenshots/${scenario.pickle.name}.png`;
     await page.screenshot({ path: screenshotPath });
-    this.attach(fs.readFileSync(screenshotPath), "image/png");
   }
   await context.close();
   await browser.close();
