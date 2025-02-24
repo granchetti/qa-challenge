@@ -64,5 +64,5 @@ npm run test:history
 
 [![GitHub Actions](https://github.com/granchetti/qa-challenge/actions/workflows/e2e_tests.yml/badge.svg)](https://github.com/granchetti/qa-challenge/actions/workflows/e2e_tests.yml)
 
-The project includes GitHub Actions configuration for on-demand test execution. The workflow must be manually triggered through the GitHub Actions interface.
+The project includes GitHub Actions configuration for on-demand test execution. The workflow is manually triggered through the GitHub Actions interface.
 
