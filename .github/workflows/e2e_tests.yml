@@ -3,11 +3,6 @@ name: E2E Tests
 on:
   workflow_dispatch:
 
-permissions:
-  actions: write
-  contents: read
-  pull-requests: write 
-
 jobs:
   e2e-tests:
     name: Execute tests
