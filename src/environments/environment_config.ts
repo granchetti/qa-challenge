@@ -7,11 +7,11 @@ export class EnvironmentConfig {
   private environment: string;
 
   private constructor(environment: string) {
-    this.environment = environment ?? "dev";
+    this.environment = environment ?? "integration";
     this.config = this.loadConfiguration();
   }
 
-  public static getInstance(environment: string = "dev"): EnvironmentConfig {
+  public static getInstance(environment: string = "integration"): EnvironmentConfig {
     if (!EnvironmentConfig.instance) {
       EnvironmentConfig.instance = new EnvironmentConfig(environment);
     }
