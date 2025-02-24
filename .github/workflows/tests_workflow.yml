@@ -1,10 +1,10 @@
-name: E2E Tests
+name: Acc∫eptance Tests
 
 on:
   workflow_dispatch:
 
 jobs:
-  e2e-tests:
+  tests:
     name: Execute tests
     runs-on: ubuntu-latest
 
@@ -24,7 +24,7 @@ jobs:
       - name: Install Playwright browsers
         run: npx playwright install --with-deps
 
-      - name: Run E2E tests
+      - name: Run acceptance tests
         run: npm run test
         env:
           CI: true

@@ -62,7 +62,7 @@ npm run test:history
 ```
 ## 🚦 CI/CD (GitHub Actions)
 
-[![GitHub Actions](https://github.com/granchetti/qa-challenge/actions/workflows/e2e_tests.yml/badge.svg)](https://github.com/granchetti/qa-challenge/actions/workflows/e2e_tests.yml)
+[![GitHub Actions](https://github.com/granchetti/qa-challenge/actions/workflows/tests.yml/badge.svg)](https://github.com/granchetti/qa-challenge/actions/workflows/tests.yml)
 
 The project includes GitHub Actions configuration for on-demand test execution. The workflow is manually triggered through the GitHub Actions interface.
 
