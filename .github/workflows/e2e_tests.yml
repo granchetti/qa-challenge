@@ -5,7 +5,8 @@ on:
 
 permissions:
   actions: write
-  contents: write
+  contents: read
+  pull-requests: write 
 
 jobs:
   e2e-tests:
